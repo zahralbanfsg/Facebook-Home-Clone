@@ -1,0 +1,465 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+/* <-------------------- Navbar-Start -------------------->  */
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  align-items: center;
+  padding: 10px;
+  height: 56px;
+  /* border: 1px solid red; */
+  width: 100%;
+  box-shadow: 0px 1px 3px #ccc;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+/* left-navbar --> start */
+.leftnav {
+  display: flex;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  /* border: 1px solid red; */
+}
+.fa-facebook {
+  color: rgba(0, 0, 255, 0.719);
+  font-size: 40px;
+}
+.search {
+  position: relative;
+}
+.search input {
+  font-size: 15px;
+  border-radius: 15px;
+  border: none;
+  padding: 12px 5px 12px 35px;
+  background-color: #f5f0f0;
+  margin-left: 5px;
+  color: rgb(0, 0, 0);
+  /* height: 40px; */
+}
+.search input:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+input:focus {
+  outline: none;
+}
+.leftnav .fa-search {
+  color: grey;
+  position: absolute;
+  font-size: 17px;
+  left: 15px;
+  top: 11px;
+}
+/* left-navbar --> end */
+
+/* middle-navbar --> start */
+.centernav ul {
+  display: flex;
+  list-style-type: none;
+}
+.centernav a {
+  padding: 10px 25px;
+  font-size: 30px;
+  color: rgb(128, 128, 128);
+}
+.fristunderline {
+  color: rgba(0, 0, 255, 0.719);
+  border-bottom: 3px solid #1877f2;
+}
+.centernav ul a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+/* middle-navbar --> end */
+
+/* right-navbar --> start */
+
+.rightnav {
+  display: flex;
+  /* border: 1px solid red; */
+}
+.profile {
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  /* border: 1px solid red; */
+}
+.firstimg {
+  width: 40px;
+  border-radius: 100%;
+  margin-right: 5px;
+  /* border: 1px solid red; */
+}
+.rightnav p {
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 10px;
+  text-decoration: none;
+  color: black;
+}
+.rightnav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid red; */
+  padding: 0px 10px;
+  list-style-type: none;
+  color: black;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: #e4e6eb;
+  border-radius: 100%;
+  text-decoration: none;
+}
+
+/* right-navbar --> end */
+
+/* All --> start */
+.all {
+  display: flex;
+  justify-content: space-between;
+  height: 100hv;
+  background-color: #f0f2f5;
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* leftside --> start */
+.leftside {
+  height: 100vh;
+  padding: 10px;
+  /* border: 1px solid red; */
+  width: 25%;
+  position: sticky;
+  top: 56px;
+  left: 0px;
+  background-color: #f0f2f5;
+}
+.leftside:hover {
+  overflow: scroll;
+}
+.leftside div {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  padding: 5px;
+  /* border: 1px solid red; */
+}
+/* leftside --> end */
+
+/* center --> start */
+.mid {
+  width: 50%;
+  /* border: 1px solid red; */
+}
+
+.Home {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.imgstories {
+  width: 100%;
+  height: 220px;
+  border-radius: 20px;
+}
+.firstphoto {
+  height: 150px;
+}
+.stories {
+  position: relative;
+  width: 150px;
+  height: 220px;
+  border-radius: 20px;
+  box-shadow: 0 0 5px 5px #ddd;
+  margin: 5px;
+}
+.pluse {
+  position: absolute;
+  top: 125px;
+  left: 45px;
+  color: white;
+  font-size: 20px;
+  background-color: #1877f2;
+  padding: 10px;
+  border-radius: 100%;
+  border: 4px solid white;
+}
+.mid .stories p {
+  text-align: center;
+  margin-top: 23px;
+}
+.minipic {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 4px solid #1877f2;
+}
+.textOnPic {
+  position: absolute;
+  top: 170px;
+  left: 10px;
+  color: white;
+  font-size: 13px;
+}
+
+/* posts --> start */
+.firstpost {
+  box-shadow: 0 0 5px 5px #ddd;
+  border-radius: 10px;
+  margin: 20px 0px;
+  padding: 5px;
+  background-color: white;
+  width: 100%;
+  /* border: 1px solid red; */
+}
+.fPostOne {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin: 0px 5px;
+}
+.fPostOne input {
+  border: none;
+  border-radius: 50px;
+  width: 100%;
+  padding: 10px;
+  background-color: #f0f2f5;
+}
+.fPostOne input:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.miniimg {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+.firstpost hr {
+  width: 95%;
+  margin: auto;
+}
+.onepost {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 5px;
+}
+.onepost div {
+  display: flex;
+  align-items: center;
+  padding: 0px 5px;
+  font-size: 15px;
+  color: rgb(94 94 94);
+}
+.onepost div:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+.onepost .fa-video {
+  color: red;
+  font-size: 25px;
+}
+.onepost .fa-images {
+  color: greenyellow;
+  font-size: 25px;
+}
+.onepost .fa-face-laugh {
+  color: yellow;
+  font-size: 25px;
+}
+.SecondPost {
+  box-shadow: 0 0 5px 5px #ddd;
+  border-radius: 10px;
+  margin: 20px 0px;
+  padding: 10px;
+  background-color: white;
+  width: 100%;
+  /* border: 1px solid red; */
+}
+.posttwo {
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  /* border: 1px solid red; */
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+.post2 {
+  display: flex;
+  align-items: center;
+}
+.textTwo .header {
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.textTwo p {
+  font-weight: lighter;
+  color: rgb(94 94 94);
+  font-size: 12px;
+}
+.SecondPost .img1 {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+.SecondPost .img2 {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  /* border: 1px solid red; */
+  padding: 15px;
+  margin-bottom: 10px;
+}
+.textthree {
+  /* border: 1px solid red; */
+  padding: 5px;
+  font-weight: lighter;
+  margin-bottom: 5px;
+}
+
+.SecondPost hr {
+  width: 95%;
+  margin: auto;
+}
+.reacts {
+  display: flex;
+  justify-content: space-around;
+  margin: 5px;
+  /* padding: 5px; */
+}
+.reacts div {
+  display: flex;
+  align-items: center;
+  padding: 10px 5px;
+  font-size: 20px;
+  color: rgba(94, 94, 94, 0.68);
+}
+.textfour {
+  padding: 5px;
+  font-weight: lighter;
+  margin: 10px;
+  padding: 5px;
+}
+.line {
+  width: 100%;
+  margin: auto;
+}
+.fa-ellipsis-h {
+  font-size: 20px;
+}
+
+/* center --> end */
+
+/* rightside --> start */
+.rightside {
+  width: 20%;
+  position: sticky;
+  top: 56px;
+  right: 0px;
+  background-color: #f0f2f5;
+  height: 100vh;
+  padding: 10px;
+  /* border: 1px solid red; */
+}
+.rightside:hover {
+  overflow: scroll;
+}
+.imgtwo {
+  width: 150px;
+  border-radius: 10px;
+  margin-right: 5px;
+}
+.imgthree {
+  width: 100px;
+  height: 80px;
+  border-radius: 10px;
+  margin-right: 5px;
+}
+.topsec {
+  display: flex;
+  align-items: center;
+  /* border: 1px solid red; */
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.topsec {
+  font-weight: bold;
+}
+h1 {
+  /* border: 1px solid red; */
+  padding: 10px 15px;
+  color: rgb(128, 128, 128);
+  font-weight: 100;
+}
+.midsec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.midsec p {
+  font-size: 18px;
+  color: rgb(128, 128, 128);
+  font-weight: lighter;
+}
+.midsec i {
+  /* border: 1px solid red; */
+  padding: 8px;
+  font-weight: bolder;
+  color: rgb(128, 128, 128);
+}
+/* rightside --> end */
+.endsec img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin-right: 5px;
+}
+.endsec div {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  padding: 10px;
+  /* border: 1px solid red; */
+}
+.endsec div:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 1080px) {
+  .mid {
+    padding: 0px 50px;
+  }
+  .leftside {
+    display: none;
+  }
+  .search input {
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 882px) {
+  .mid {
+    padding: 0px 3px;
+  }
+  .rightside {
+    display: none;
+  }
+  .centernav {
+    display: none;
+  }
+}
